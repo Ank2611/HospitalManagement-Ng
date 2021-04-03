@@ -1,0 +1,23 @@
+<p>address-list works!</p>
+
+<h1>Lista de adrese</h1>
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <td>Adresa</td>
+                <td>Oras</td>
+                <td>Email</td>
+                <td>Nr. telefon</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let address of addressList">
+                <td>{{address.address}}</td>
+                <td>{{address.city}}</td>
+                <td>{{address.email}}</td>
+                <td>{{address.noTel}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
